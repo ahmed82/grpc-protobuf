@@ -13,24 +13,22 @@ export the path
 protoc --version
 ```
 ## Install library
-```shell
+```go
 go get -u google.golang.org/grpc
 ```
-```cmd
+```go
 go get -u github.com/golang/protobuf/protoc-gen-go
-the terminal replace the above commend with the nextone
+The terminal replace the above commend with the nextone
 go install github.com/golang/protobuf/protoc-gen-go@latest
-the website advice to use
+## The website advice to use
 go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
-go install google.golang.org/protobuf/cmd/protoc-gen-go@@v1.3.2
-
 ```
 go mod why github.com/golang/protobuf will show the full chain importing the package back to the direct dependency.
 
 
 ## Start new project
 
-golang new or from the cmd 
+if you use golang create new. or from the cmd 
 ```go
 go mod init [yourModule.name]
 ```
