@@ -37,4 +37,6 @@ Now run the compiler, specifying the source directory (where your application's 
 protoc --proto_path=proto --proto_path=third_party --go_out=plugins=grpc:proto service.proto
 
 protoc -I=$SRC_DIR --go_out=proto service.proto --proto_path=proto  --proto_path=third_party 
+
+protoc --go_out=. --go_opt=path=source_relative --go-grpc_out=. --go-grpc_opt=path=source_relative proto/service.proto
 ```
