@@ -2,7 +2,8 @@ syntax = "proto3";
 
 package proto;
 
-option go_package = "grpc-protobuf;go_service_grpc";
+option go_package = "./grpc-protobuf";
+//;go_service_grpc";
 
 service UserManagement{
     rpc CreateNewUser (NewUser) returns (User){}

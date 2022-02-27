@@ -40,3 +40,28 @@ protoc -I=$SRC_DIR --go_out=proto service.proto --proto_path=proto  --proto_path
 
 protoc --go_out=. --go_opt=path=source_relative --go-grpc_out=. --go-grpc_opt=path=source_relative proto/service.proto
 ```
+
+NOTE: to avoid generating proto file by commend line, used Makefile.
+
+# GO Autocompl
+
+1- Check:
+```go
+go env
+```
+2- Open Visual Studio and search Golang Plugin and then install it
+3- VsCode click View -> Command Pallete or type <b>Ctrl+Shift+P<b> and type "goinstall update/tools".
+4- check all dependencies and click OK. it will take time to download all dependencies.
+5- Add some custom configuration on User Setting/ <b>Ctrl+Shift+P<b> and type "User" select "Preferences: Open User Settings"
+
+on settings.json, and this script and then restart vscode
+
+
+# package issues:
+running "go mod tidy" solved the issue
+
+This command goes through the go.mod file to resolve dependencies:
+
+delete the packages that are not needed
+download those needed
+update the go.sum
