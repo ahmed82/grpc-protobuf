@@ -5,6 +5,28 @@ package proto;
 option go_package = "./proto";
 //;go_service_grpc";
 
+service TestApi {
+    rpc Echo (ResponseRequest) returns (ResponseRequest) {}
+    rpc GetUser(UserRequest) returns (UserResponse){}
+
+}
+
+message ResponseRequest {
+    string msg =1;
+
+}
+
+message UserRequest {
+    string uuid = 1;
+}
+
+message UserResponse {
+    string name = 1;
+    int32 age = 2;
+    string email = 3;
+}
+
+// Below logic for another service provider.
 service UserManagement{
     rpc CreateNewUser (NewUser) returns (User){}
 }

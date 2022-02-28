@@ -65,3 +65,20 @@ This command goes through the go.mod file to resolve dependencies:
 delete the packages that are not needed
 download those needed
 update the go.sum
+
+# Run the gRPC Application
+
+1- Build the project
+```shell
+make clean & make create
+```
+2- Run  the Server
+```shell
+cd server
+go run .\server.go 
+```
+3- Run the Clint to test the API respons
+```shell
+cd .\client\
+go run .\client.go
+```
