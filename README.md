@@ -43,18 +43,20 @@ protoc --go_out=. --go_opt=path=source_relative --go-grpc_out=. --go-grpc_opt=pa
 
 NOTE: to avoid generating proto file by commend line, used Makefile.
 
-# GO Autocompl
+# GO VSCode Autocomplete and Auto-import
 
-1- Check:
+1- Verify the GOPATH: *OPTINALY
+Install golang as usual, and setting Gopath manually first. I make go-wokspace folder on C:\Users\{user}\Documents which is we can use as GOPATH. After that you add on user variables. Under go-workspace folder, create three folder called bin, pkg, and src
+
 ```go
 go env
 ```
 2- Open Visual Studio and search Golang Plugin and then install it
 3- VsCode click View -> Command Pallete or type <b>Ctrl+Shift+P<b> and type "goinstall update/tools".
 4- check all dependencies and click OK. it will take time to download all dependencies.
-5- Add some custom configuration on User Setting/ <b>Ctrl+Shift+P<b> and type "User" select "Preferences: Open User Settings"
-
+5- Add custom configuration on User Setting/ <b>Ctrl+Shift+P<b> and type "User" select "Preferences: Open User Settings"
 on settings.json, and this script and then restart vscode
+![image](https://user-images.githubusercontent.com/9446035/156212052-8a980390-fae6-44a7-bb2d-03e7560d36ce.png)
 
 
 # package issues:
