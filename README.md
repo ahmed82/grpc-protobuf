@@ -55,7 +55,8 @@ go env
 3- VsCode click View -> Command Pallete or type <b>Ctrl+Shift+P<b> and type "goinstall update/tools".
 4- check all dependencies and click OK. it will take time to download all dependencies.
 5- Add custom configuration on User Setting/ <b>Ctrl+Shift+P<b> and type "User" select "Preferences: Open User Settings"
-on settings.json, and this script and then restart vscode
+on settings.json, Add this script and then restart vscode.
+ 
 ![image](https://user-images.githubusercontent.com/9446035/156212052-8a980390-fae6-44a7-bb2d-03e7560d36ce.png)
 
 
