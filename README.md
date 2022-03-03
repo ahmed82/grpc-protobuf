@@ -85,3 +85,24 @@ go run .\server.go
 cd .\client\
 go run .\client.go
 ```
+-----------------------------------------------------------------------------------------
+# Creating REST API based on gRPC with Gateway
+```
+https://github.com/grpc-ecosystem/grpc-gateway
+```
+new file in the project root tools.go
+```go
+// +build tools
+
+package tools
+
+import (
+	_ "github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-grpc-gateway"
+	_ "github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-openapiv2"
+	_ "google.golang.org/grpc/cmd/protoc-gen-go-grpc"
+	
+```
+Run
+```go
+go mod tidy
+```
