@@ -5,6 +5,8 @@ package proto;
 option go_package = "./proto";
 //;go_service_grpc";
 
+import "google/api/annotations.proto";
+
 service TestApi {
     rpc Echo (ResponseRequest) returns (ResponseRequest) {}
     rpc GetUser(UserRequest) returns (UserResponse){}
