@@ -106,3 +106,9 @@ Run
 ```go
 go mod tidy
 ```
+TBT:
+```
+git config core.autocrlf false 
+git rm --cached -r . 
+git reset --hard
+```
