@@ -106,7 +106,7 @@ Run
 ```go
 go mod tidy
 ```
-TBT:
+TBD:
 ```
 git config core.autocrlf false 
 git rm --cached -r . 
